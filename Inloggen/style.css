@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ONDERSTAANDE UITGANGSPUNTEN ZAGEN WE IN DE LES */
+:root {
+  font-size: 62.5%; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  background-color: white; }
+
+.links {
+  border-top: 6rem solid #cf0103;
+  border-left: 5rem solid transparent;
+  height: 0;
+  min-width: 100vw; }
+
+.linksa {
+  width: 90vw;
+  position: absolute;
+  right: 0;
+  top: 1.7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: foco, sans-serif;
+  font-size: 1.3rem; }
+
+.linksa a {
+  color: white;
+  text-decoration: none;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 1rem; }
+
+.linksa a:hover {
+  color: #ffad1b;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s; }
+
+.responsive {
+  display: none; }
+
+.linkstitelkader {
+  border-top: 4rem solid #f40103;
+  border-left: 5rem solid transparent;
+  height: 0;
+  width: 60vw;
+  position: absolute;
+  right: 0; }
+
+.linkstitel {
+  color: white;
+  position: absolute;
+  top: 6.5rem;
+  right: 2rem;
+  font-size: 2.5rem;
+  font-family: league-gothic, sans-serif; }
+
+.logo {
+  width: 75vw;
+  margin: 15vh 12.5vw 5vh 12.5vw; }
+
+.logo:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s; }
+
+.footerlinks {
+  height: 3rem;
+  margin: 1rem; }
+
+.footerlinks:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s; }
+
+.knoppen {
+  width: 35vw;
+  display: block;
+  margin: 0 32.5vw; }
+
+.knoppen:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s; }
+
+footer {
+  border-bottom: 6rem solid #cf0103;
+  border-right: 5rem solid transparent;
+  height: 0;
+  width: 100vw;
+  position: absolute;
+  bottom: 0; }
+
+@media (min-width: 400px) {
+  .logo {
+    width: 70vw;
+    margin: 12vh 15vw 5vh 15vw; } }
+
+@media (min-width: 450px) {
+  .logo {
+    margin: 12vh 15vw 0 15vw; }
+  .knoppen {
+    margin: 0 32.5vw; } }
+
+@media (min-width: 500px) {
+  .knoppen {
+    display: inline;
+    margin: 2vh 6vw; }
+  .link1 {
+    display: inline; } }
+
+@media (min-width: 600px) {
+  .logo {
+    width: 60vw;
+    margin: 12vh 20vw 0; }
+  .knoppen {
+    width: 30vw;
+    margin: 2vh 9vw; }
+  .link2 {
+    display: inline; } }
+
+@media (min-width: 700px) {
+  .logo {
+    width: 50vw;
+    margin: 12vh 25vw 0; }
+  .knoppen {
+    width: 25vw;
+    margin: 2vh 12vw; }
+  .link3 {
+    display: inline; } }
+
+@media (min-width: 800px) {
+  .link4 {
+    display: inline; } }
+
+@media (min-width: 900px) {
+  .logo {
+    width: 40vw;
+    margin: 12vh 30vw 0; }
+  .knoppen {
+    width: 20vw;
+    margin: 2vh 14vw; }
+  .link5 {
+    display: inline; } }
+
+@media (min-width: 1050px) {
+  .logo {
+    width: 30vw;
+    margin: 12vh 32.5vw 0; }
+  .knoppen {
+    width: 15vw;
+    margin: 2vh 16vw; }
+  .responsive {
+    display: inline; } }

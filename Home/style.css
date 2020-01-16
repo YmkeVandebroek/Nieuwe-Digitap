@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ONDERSTAANDE UITGANGSPUNTEN ZAGEN WE IN DE LES */
+:root {
+  font-size: 62.5%; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  background-color: white; }
+
+.links {
+  border-top: 6rem solid #cf0103;
+  border-left: 5rem solid transparent;
+  height: 0;
+  min-width: 100vw; }
+
+.headerel {
+  width: 90vw;
+  position: absolute;
+  right: 0;
+  top: 1.7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: foco, sans-serif;
+  font-size: 1.3rem; }
+
+.menu {
+  position: absolute;
+  left: 0rem;
+  width: 4rem;
+  height: 3rem;
+  margin-left: 2rem;
+  margin-right: 3rem; }
+
+.logo {
+  position: absolute;
+  left: 7rem;
+  height: 4rem; }
+
+.logo:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s; }
+
+.taal {
+  position: absolute;
+  left: 15rem;
+  font-family: league-gothic, sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem; }
+
+.meldingen {
+  position: absolute;
+  right: 7rem;
+  height: 3rem;
+  display: none; }
+
+.berichten {
+  height: 3rem;
+  position: absolute;
+  right: 11rem;
+  display: none; }
+
+.fotoklein {
+  position: absolute;
+  right: 2rem;
+  top: 0vh;
+  width: 4rem; }
+
+.linkstitel {
+  color: white;
+  position: absolute;
+  top: 6.5rem;
+  right: 2rem;
+  font-size: 2.5rem;
+  font-family: league-gothic, sans-serif; }
+
+.linkstitelkader {
+  border-top: 4rem solid #f40103;
+  border-left: 5rem solid transparent;
+  height: 0;
+  width: 60vw;
+  position: absolute;
+  right: 0; }
+
+.gridboven {
+  width: 80vw;
+  height: 20vh;
+  margin: 10vh 10vw 0vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 2rem; }
+
+.gridbovenel {
+  width: 100%; }
+
+.gridbovenel:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s; }
+
+.gridmidden {
+  width: 100vw;
+  height: 15vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+  grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 2rem; }
+
+.gridmiddenel {
+  width: 100%; }
+
+.gridmiddenel:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s; }
+
+.gridmiddenel:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6; }
+
+.gridonder {
+  width: 100vw;
+  height: 15vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+  grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 2rem; }
+
+.gridonderel {
+  width: 100%; }
+
+.gridonderel:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s; }
+
+.gridonderel:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6; }
+
+.persoonlijkpaneel {
+  height: 30vh;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+footer {
+  border-bottom: 4rem solid #cf0103;
+  border-right: 3rem solid transparent;
+  height: 0;
+  width: 100vw;
+  position: absolute;
+  bottom: 0; }
+
+@media (min-width: 450px) {
+  .gridboven {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+    width: 100vw;
+    height: 10vh;
+    margin: 10vh 0 0; }
+  .gridmidden {
+    width: 80vw; }
+  .gridonder {
+    width: 80vw; }
+  .persoonlijkpaneel {
+    height: 35vh; } }
+
+@media (min-width: 550px) {
+  .gridmidden {
+    margin: 0 0 5vh; }
+  .meldingen {
+    display: inline; }
+  .berichten {
+    display: inline; } }
+
+@media (min-width: 650px) {
+  .gridboven {
+    margin: 15vh 0 0; }
+  .gridmidden {
+    width: 70vw;
+    margin: 10vh 0 10vh; }
+  .gridonder {
+    width: 70vw; }
+  .persoonlijkpaneel {
+    height: 50vh; } }
+
+@media (min-width: 950px) {
+  .gridboven {
+    width: 80vw;
+    margin: 10vh 10vw; }
+  .gridmidden {
+    width: 55vw;
+    margin-left: 5vw; }
+  .gridonder {
+    width: 55vw;
+    margin-left: 5vw; }
+  .persoonlijkpaneel {
+    height: 55vh; } }
+
+@media (min-width: 1200px) {
+  .persoonlijkpaneel {
+    height: 60vh; }
+  .gridmidden {
+    width: 45vw;
+    margin-left: 10vw; }
+  .gridonder {
+    width: 45vw;
+    margin-left: 10vw; } }
